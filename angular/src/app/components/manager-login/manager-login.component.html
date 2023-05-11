@@ -1,0 +1,66 @@
+<form [formGroup]="loginform!" (ngSubmit)="check()">
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <div class="mb-md-5 mt-md-4 pb-5">
+
+                                <h2 class="fw-bold mb-2 text-uppercase">כניסה</h2>
+                                <p class="text-white-50 mb-5"> הכנס מספר תעודת זהות וסיסמא</p>
+
+                                <div class="form-outline form-white mb-4 position-relative">
+                                    <input type="{{ showPassword1 ? 'text' : 'password' }}" id="idNumber"
+                                        class="form-control form-control-lg" minlength="9" formControlName="idNumber"
+                                        required>
+                                    <label class="form-label" for="idNumber">ID number</label>
+                                    <button
+                                        class="btn btn-sm my-button btn-outline-secondary position-absolute end-0 top-50 translate-middle-y"
+                                        type="button" (click)="togglePasswordVisibility()">
+                                        {{ showPassword1 ? 'Hide' : 'Show' }}
+                                    </button>
+                                </div>
+                                <div *ngIf="getidNumber.invalid && getidNumber.dirty||getidNumber.touched">
+                                    <p *ngIf="getidNumber.hasError('required')">שדה חובה </p>
+                                    <p *ngIf="getidNumber.hasError('minlength')">9 תווים לפחות</p>
+                                    <!-- <p *ngIf="getidNumber.hasError('pattern')">מספר לא תקין</p> -->
+                                </div>
+
+                                <div class="form-outline form-white mb-4 position-relative">
+                                    <input type="{{ showPassword2 ? 'text' : 'password' }}" id="password"
+                                        class="form-control form-control-lg" name="phone" formControlName="password"
+                                        required>
+                                    <label class="form-label" for="password">Password</label>
+                                    <button
+                                        class="btn btn-sm my-button btn-outline-secondary position-absolute end-0 top-50 translate-middle-y"
+                                        type="button" (click)="togglePasswordVisibility2()">
+                                        {{ showPassword2 ? 'Hide' : 'Show' }}
+                                    </button>
+                                </div>
+
+                                <div *ngIf="getPassword.invalid && getPassword.dirty||getPassword.touched">
+                                    <p *ngIf="getPassword.hasError('required')">שדה חובה </p>
+                                    <p *ngIf="getPassword.hasError('minlength')">10 תווים לפחות</p>
+                                    <p *ngIf="getPassword.hasError('pattern')">חייב להכיל אות גדולה,אות קטנה ,תו וספרה
+                                    </p>
+                                </div>
+
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit"
+                                    [disabled]="!loginform.valid">התחבר</button>
+
+                                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                                    <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                                    <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+<router-outlet></router-outlet>

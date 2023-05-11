@@ -1,0 +1,160 @@
+
+body {
+    font-family: "PT Sans Caption", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    
+  }
+  .imgs{
+    width: 1200px;
+    margin: auto;
+  }
+  img{
+    width: 350px;
+    height: 200px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+  .a{
+    background-color: rgb(233, 247, 246);
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+  }
+  
+  #logo {
+    text-decoration: none;
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+  }
+  
+  #menu-icon {
+    font-family: Geneva, sans-serif;
+    font-size: 6vh;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    /* background: url('../../../assets/img/back2.jpg') center center no-repeat; */
+    background-size: cover;
+    
+  }
+  
+  .hero-title {
+    max-width: 16em;
+    margin: 0;
+    font-size: 12vh;
+    font-weight: bold;
+    line-height: 0.9;
+    text-shadow: 10px 10px 6px rgb(11, 3, 40);
+  }
+  
+  @media only screen and (min-width: 32em) {
+    .hero-title {
+      font-size: 16vh;
+      
+    }
+  }
+  .hero-footer {
+    display: flex;
+    margin-bottom: 1em;
+    
+  }
+  
+  .button {
+    padding: 0.5em 0.67em;
+    color: white;
+    text-decoration: none;
+    border: 0.1em solid white;
+    
+  }
+  
+  .button-primary {
+    color: black;
+    background-color: white;
+  }
+  
+  article {
+    max-width: 36em;
+    margin: 0 auto;
+    padding: 1em;
+    direction: rtl;
+    
+  }
+  @font-face {
+    src: url('https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2');
+    font-family:'Compressa VF';
+    font-style: normal;
+  }
+  html {
+    height:100%;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #211D26;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+  
+  h1 {
+    font-family:'Compressa VF';
+    text-rendering: optimizeSpeed;
+    color: #D11B3D;
+    width: 100%;
+    user-select: none;
+    line-height: 0.8em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    width: 100vw;
+  }
+  h1 span {
+    transform: translateY(-10px);
+    user-select: none;
+  }
+  h1.flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  h1.stroke span {
+    position: relative;
+    color: #211D26;
+    line-height: inherit;
+  }
+  h1.stroke span:after {
+    content: attr(data-char);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FE6730;
+    position: absolute;
+    left: 0;
+    line-height: inherit;
+    color: transparent;
+    z-index: -1;
+  }
+  #ss{
+    margin: auto;
+    text-align: center !important;
+  }
+
+  #myback{
+    background-image: url('../../../assets/photos/140310_4223.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  

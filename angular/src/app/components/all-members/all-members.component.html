@@ -1,0 +1,26 @@
+<p id="heder1">החברים בקופה שלנו</p>
+<p id="heder2"><mark>להצגת כל הנתונים ולהוספת תאריכי חיסון והוספת פרטים לחבר 
+    <br/>
+    אנא לחץ לחיצה כפולה על השורה בה מוצגים פרטי החבר</mark></p>
+<table class="dtable">
+    <tr class="dtr">
+        <th class="dth">שם פרטי
+        <br />ומשפחה
+        </th>
+        <th class="dth">מספר זהות</th>
+        <th class="dth">כתובת</th>
+        <th class="dth">תאריך לידה</th>
+        <th class="dth">טלפון</th>
+        <th class="dth">פלאפון</th>
+    </tr>
+    <tr *ngFor="let i of listAllMembers[0] " (dblclick)="PassMoreDetails(i)">
+        <!-- [style.background-color]="selectedUser === i ? '#c7e0f4' : 'white'" (click)="toggleSelectedUser(i)" -->
+        <td class="dth"> <a>{{i.name}}</a></td>
+        <td class="dth"> <a>{{i.IDnumber}}</a></td>
+        <td class="dth"><a>{{i.Address}}</a></td>
+        <td class="dth"> <a>{{i.BornDate}}</a></td>
+        <td class="dth"> <a>{{i.Phone}}</a></td>
+        <td class="dth"><a>{{i.CellPhone}}</a></td>
+        <br>
+    </tr>
+</table>

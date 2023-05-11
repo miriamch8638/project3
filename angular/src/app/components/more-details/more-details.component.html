@@ -1,0 +1,30 @@
+<!-- {{this.managerSer.thisMember.name}} -->
+<section class="container">
+    <div class="m">
+        <p><mark>שם</mark>{{this.managerSer.thisMember.name}}</p>
+        <p><mark>תעודת זהות</mark>{{this.managerSer.thisMember.IDnumber}}</p>
+        <p><mark>כתובת</mark> {{this.managerSer.thisMember.Address}}</p>
+        <p><mark>תאריך לידה</mark>{{this.managerSer.thisMember.BornDate}}</p>
+        <p><mark>מספר טלפון</mark> {{this.managerSer.thisMember.Phone}}</p>
+        <p><mark>מספר פלאפון</mark> {{this.managerSer.thisMember.CellPhone}}</p>
+        <p><mark>תאריכי קבלת חיסון</mark> {{this.managerSer.thisMember.GetCoronaVaccine}}</p>
+        <p><mark> יצרני החיסון </mark>{{this.managerSer.thisMember.CoronaVaccineManufacturer}}</p>
+        <p><mark>תאריך קבלת תוצאה חיובית</mark> {{this.managerSer.thisMember.GetPPositiveResult}}</p>
+        <p><mark>תאריך החלמה מקורונה</mark> {{this.managerSer.thisMember.RecoveryDate}}</p>
+        <p>הוספת חיסון למשתמש</p>
+        <p style="display: inline-block; margin: 50px;">בחר יצרן</p>
+        <p style="display: inline-block;">בחר תאריך בו ניתן חיסון</p>
+        <br>
+        <select  [(ngModel)]="VaccineManufacturer">
+            <option value="Moderna">Moderna</option>
+            <option value="Jonson&Jonson">Jonson&Jonson</option>
+            <option value="Pfizer">Pfizer</option>
+            <option value="AstraZeneca">AstraZeneca</option>
+        </select>
+        <input type="date" [(ngModel)]="dateVaccine"  style="margin-right: 50px;">
+        <!-- onchange="insertDateObject(this.value) -->
+        <br>
+        <button (click)="checkVaccune()" id="dbutton">הוסף חיסון</button>
+        
+    </div>
+</section>

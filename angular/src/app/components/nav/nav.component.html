@@ -1,0 +1,22 @@
+<div class="container mt-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="home" id="left">בית</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="manager-login" (click)="maketrue">כניסה</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="add-member" [hidden]="!this.s.ismanager">הוספת חבר לקופה</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="all-data" [hidden]="!this.s.ismanager">לצפייה בנתוני הקורונה </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="all-members" [hidden]="!this.s.ismanager">להצגת החברים בקופה</a>
+      <li class="nav-item" >
+        <a class="nav-link" routerLink="private-area" id="personalErea" name="personalErea" [hidden]="!this.s.isIn">איזור אישי </a>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>

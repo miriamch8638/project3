@@ -1,0 +1,70 @@
+<!-- <form [formGroup]="sighupForm!" (ngSubmit)="okForm()">
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <div class="mb-md-5 mt-md-4 pb-5">
+
+                                <h2 class="fw-bold mb-2 text-uppercase">הרשמה</h2>
+                                <p class="text-white-50 mb-5">הקישו פרטי חבר להרשמה</p>
+
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" class="form-control form-control-lg" placeholder="שם פרטי"
+                                        formControlName="name" />
+                                    <label class="form-label" for="typeName">שם פרטי</label>
+                                </div>
+                                <div *ngIf="ge.invalid &&(getFirstName.dirty ||getFirstName.touched)">
+                                    <p *ngIf="getFirstName.hasError('required')">שדה חובה</p>
+                                    <p *ngIf="getFirstName.hasError('pattern')">לא ניתן להכניס תו שאינו אות</p>
+                                    <p *ngIf="getFirstName.hasError('checkName')">יש להכניס שם פרטי ושם משפחה</p>
+
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" class="form-control form-control-lg" placeholder="מספר זהות"
+                                        formControlName="IDnumber" />
+                                    <label class="form-label">מספר זהות</label>
+                                </div>
+                                <div *ngIf="getPhon.invalid &&(getPhon.dirty ||getPhon.touched)">
+                                    <p *ngIf="getPhon.hasError('required')">שדה חובה</p>
+                                    <p *ngIf="getPhon.hasError('pattern')">לא ניתן להכניס תו שאינו מספר דרוש 9 ספרות</p>
+                                    <p *ngIf="getPhon.hasError('checkID')">תבנית שגויה</p>
+
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" class="form-control form-control-lg" placeholder="טלפון"
+                                        formControlName="Phone" />
+                                    <label class="form-label" for="phone">טלפון</label>
+                                </div>
+
+                                <div *ngIf="getPhon.invalid &&(getPhon.dirty ||getPhon.touched)">
+                                    <p *ngIf="getPhon.hasError('required')">שדה חובה</p>
+                                    <p *ngIf="getPhon.hasError('pattern')">לא ניתן להכניס תו שאינו מספר דרוש 9 מספרים
+                                    </p>
+                                    <p *ngIf="getPhon.hasError('checkPhone')">תבנית שגויה</p>
+
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" id="phone" class="form-control form-control-lg"
+                                        placeholder="פלאפון" formControlName="CellPhone" />
+                                    <label class="form-label" for="phone">פלאפון</label>
+                                </div>
+                                <div *ngIf="getPhon.invalid &&(getPhon.dirty ||getPhon.touched)">
+                                    <p *ngIf="getPhon.hasError('required')">שדה חובה</p>
+                                    <p *ngIf="getPhon.hasError('pattern')">לא ניתן להכניס תו שאינו מספר דרוש 10 מספרים
+                                    </p>
+                                    <p *ngIf="getPhon.hasError('checkCellPhone')">תבנית שגויה</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form> -->

@@ -1,0 +1,30 @@
+.dtable {
+    height: auto;
+    width: auto;
+    direction: rtl;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px sandybrown solid;
+    border-radius: 50px;
+}
+
+.dtr {
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.dth {
+    padding: 20px;
+}
+
+#heder1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#heder2 {
+    font-size: 25px;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+.my-button{
+    background-color:rgb(220, 120, 43);
+    border: none;
+    color: black;
+}
+.top-50 {
+    top: 30%!important;
+    padding: 14px;
+}
